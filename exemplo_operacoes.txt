@@ -1,0 +1,4 @@
+add Gustavo 50 N
+edit João 45 P
+assist
+invertida
