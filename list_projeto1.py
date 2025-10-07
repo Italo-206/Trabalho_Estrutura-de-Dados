@@ -24,6 +24,7 @@ class ListaDuplamenteEncadeada:
         while atual:
             total += sys.getsizeof(atual)
             total += sys.getsizeof(atual.nome)
+            
             total += sys.getsizeof(atual.idade)
             total += sys.getsizeof(atual.prioridade)
             atual = atual.next
@@ -91,6 +92,7 @@ class ListaDuplamenteEncadeada:
         
         # Contador para alternância (método simples: alternar em cada chamada)
         proximo = self.head
+        
         if alternancia:
             # procurar primeiro paciente normal
             atual = self.head
@@ -133,6 +135,7 @@ class ListaDuplamenteEncadeada:
                         atual.next.prev = atual.prev
                     else:
                         self.tail = atual.prev
+                        
                     # Passo 2: atualizar prioridade e reinserir
                     nome, idade = atual.nome, atual.idade
                     prioridade = nova_prioridade
@@ -173,6 +176,7 @@ class ListaDuplamenteEncadeada:
             ("Rafael", 42, 1),
             ("Lívia", 66, 2),
             ("Beto", 41, 1),
+            
             ("Paula", 21, 2)
         ]
         for nome, idade, prioridade in nomes:
@@ -191,6 +195,7 @@ def main():
         print("add NOME IDADE PRIORIDADE(P/N) | assist | edit NOME [NOVO_NOME] [NOVA_IDADE] [NOVA_PRIORIDADE(P/N)] | mostrar | invertida | sair")
         cmd = input("Digite comando: ").strip()
         partes = cmd.split()
+        
         if len(partes) == 0: continue
         if partes[0] == 'add' and len(partes) == 4:
             nome = partes[1]
@@ -221,6 +226,7 @@ def main():
         elif partes[0] == 'mostrar':
             fila.exibir()
         elif partes[0] == 'invertida':
+            
             fila.exibir(invertido=True)
         elif partes[0] == 'sair':
             break
@@ -234,3 +240,4 @@ if __name__ == "__main__":
 #Ítalo Monteiro
 #João Pedro Bringel
 #Samuel hosken
+
