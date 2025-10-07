@@ -229,3 +229,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#Feito por:
+#Ítalo Monteiro
+#João Pedro Bringel
+#Samuel hosken
