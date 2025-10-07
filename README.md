@@ -16,6 +16,6 @@ Exemplo inicial:
 
 Autores
 
-Ítalo Monteiro
-João Pedro Bringel
-Samuel Hosken
+Ítalo Monteiro,
+João Pedro Bringel,
+Samuel Hosken.
